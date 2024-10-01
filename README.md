@@ -7,5 +7,12 @@ $ npm i infoneo-input-validator
 ```
 
 ```javascript
-import validator from 'validator';
+import validateJson from 'infoneo-input-validator';
+
+
+const rule = {
+    key: [
+        { type: 'required', message: 'This field is required'}
+    ]
+}
 ```
