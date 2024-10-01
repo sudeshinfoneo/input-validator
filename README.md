@@ -2,4 +2,10 @@
 
 A lightweight and flexible JavaScript package for validating user input.
 
-npm i infoneo-input-validator
+```bash
+$ npm i infoneo-input-validator
+```
+
+```javascript
+import validator from 'validator';
+```

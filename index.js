@@ -1,4 +1,4 @@
-import Validator from "./Classes/Validator ";
+import Validator from "./Classes/Validator";
 const validate = (value) => new Validator(value);
 
 export const validateJson = (data, rules) => {
@@ -36,6 +36,9 @@ export const validateJson = (data, rules) => {
             }
             if (rule.type === 'regex') {
                 validator.regex(rule.pattern, rule.message);
+            }
+            if(rule.type === 'pattern') {
+                validator.regex(rule.value, rule.message);
             }
         }
 
